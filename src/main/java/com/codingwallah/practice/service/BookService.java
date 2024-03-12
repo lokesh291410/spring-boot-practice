@@ -14,8 +14,8 @@ import java.util.HashMap;
 @Service
 public class BookService {
     @Getter
-    private HashMap<Long, Book> books = new HashMap<>();
-    private Long bookId = 0L;
+    private HashMap<Long, Book> books;
+    private Long bookId;
 
     public Book getBookById(Long id) {
         if(books == null) {
